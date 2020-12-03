@@ -3,6 +3,9 @@
 }
 .list {
   font-size: 0px;
+}
+.list,
+.paragraph {
   margin-top: 24px;
   margin-left: 24px;
 }
@@ -10,23 +13,51 @@
   display: inline-block;
   position: relative;
   font-size: 16px;
+  border: 1px solid #3c805b;
+  background: #47986d;
+  color: white;
 }
+
 .link {
   text-decoration: none;
-  border: 1px solid #47986D;
-  background: #47986D;
+  border: 1px solid #3c805b;
+  background: #47986d;
   color: white;
-  
+  text-align: center;
   padding: 10px 30px;
-  display: inline-block;
-  border: 1px solid white;
+  display: block;
+}
+.item:hover {
+  background: #3c805b;
 }
 .link:hover {
-  background: #3C805B;
+  background: #3c805b;
 }
 .sub-list {
   position: absolute;
-  
-  
-  
+  display: none;
+  left: 0;
+  right: 0;
+}
+.sub-item {
+  display: block;
+}
+.item:hover > .sub-list {
+  display: block;
+}
+.woman-item {
+  position: relative;
+}
+.sub-list-woman {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.sub-item:hover > .sub-list-woman {
+  display: block;
+}
+.paragraph {
+  font-size: 1.3em;
+  font-family: sans-serif;
 }
